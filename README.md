@@ -1,6 +1,9 @@
 # upi_app_ui
 
 A new Flutter project.
+## screenshots
+![main page ss](https://raw.githubusercontent.com/MovingMelody/Upi-Concept-App/main/screenshots/screenshot1.jpg)
+![full page ss](https://raw.githubusercontent.com/MovingMelody/Upi-Concept-App/main/screenshots/fullpage_ss.jpg)
 
 ## Getting Started
 
