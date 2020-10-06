@@ -61,7 +61,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
                 tabs: [
                   GButton(
                     icon: LineIcons.home,
-                    text: 'Home',
+                    text: 'Homeeeee',
                     textStyle: btnstyle,
                   ),
                   GButton(
