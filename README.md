@@ -2,7 +2,8 @@
 
 A new Flutter project.
 ## screenshots
-![main page ss](https://raw.githubusercontent.com/MovingMelody/Upi-Concept-App/main/screenshots/screenshot1.jpg)
+![main page ss](https://raw.githubusercontent.com/MovingMelody/Upi-Concept-App/main/screenshots/screenshot1.jpg | width=100)
+second screenshot
 ![full page ss](https://raw.githubusercontent.com/MovingMelody/Upi-Concept-App/main/screenshots/fullpage_ss.jpg)
 
 ## Getting Started
