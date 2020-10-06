@@ -1,5 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:line_icons/line_icons.dart';
 import 'package:upi_app_ui/widgets/featureSection.dart';
 
 class HomePage extends StatefulWidget {
@@ -29,7 +30,7 @@ class _HomePageState extends State<HomePage> {
                         Text(
                           "Welcome!",
                           style: TextStyle(
-                              color: Color(0xff8E74EA), fontSize: 20.0),
+                              color: Color(0xff8E74EA), fontSize: 21.0),
                         ),
                         Text("Jonathan Jack D".toUpperCase(),
                             style: TextStyle(
@@ -56,15 +57,15 @@ class _HomePageState extends State<HomePage> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.network(
-                        'https://img.icons8.com/nolan/96/get-a-discount.png',
+                      Image.asset(
+                        'assets/discount.png',
                         width: 35.0,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text(
-                            "Cashback Upto 60%",
+                            "Cashback Upto 80%",
                             style: Theme.of(context).textTheme.bodyText1,
                           ),
                           Text("For Scan & Pay, UPI Transcations*",
@@ -113,7 +114,7 @@ class _HomePageState extends State<HomePage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Icon(
-                            Icons.add_circle_outline_rounded,
+                            LineIcons.apple,
                             color: Colors.white,
                           ),
                           Text("Add Money",
