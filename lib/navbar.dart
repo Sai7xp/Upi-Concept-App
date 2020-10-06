@@ -15,19 +15,19 @@ class _NavBarWidgetState extends State<NavBarWidget> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
   static TextStyle btnstyle = TextStyle(
-      fontFamily: 'euclid', color: Color(0xff8E74EA), fontSize: _width / 28.4);
+      fontFamily: 'euclid', color: Color(0xffffffff), fontSize: _width / 28.4);
   final List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     Text(
-      'Index 1: Likes',
+      'Index 1: History',
       style: optionStyle,
     ),
     Text(
-      'Index 2: Search',
+      'Index 2: Wallet',
       style: optionStyle,
     ),
     Text(
-      'Index 3: Profile',
+      'Index 3: Offers',
       style: optionStyle,
     ),
   ];
@@ -52,16 +52,16 @@ class _NavBarWidgetState extends State<NavBarWidget> {
             padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 8),
             child: GNav(
                 gap: 8,
-                activeColor: Color(0xff8E74EA),
+                activeColor: Color(0xffffffff),
                 color: Color(0xffcfcfcf),
                 iconSize: 24,
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
                 duration: Duration(milliseconds: 800),
-                tabBackgroundColor: Color(0x3f957CEB),
+                tabBackgroundColor: Color(0xff957CEB),
                 tabs: [
                   GButton(
                     icon: LineIcons.home,
-                    text: 'Homeeeee',
+                    text: 'Home',
                     textStyle: btnstyle,
                   ),
                   GButton(

@@ -19,66 +19,10 @@ class _FeatureSectionState extends State<FeatureSection> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Color(0x20957CEB),
-                    radius: 28.0,
-                    child: Image.asset('assets/phone.png', width: 28.0),
-                  ),
-                  SizedBox(
-                    height: 6.0,
-                  ),
-                  Text("Prepaid Bills",
-                      style:
-                          TextStyle(color: Color(0xff111111), fontSize: 13.0))
-                ],
-              ),
-              Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Color(0x25957CEB),
-                    radius: 28.0,
-                    child: Image.asset('assets/dth.png', width: 28.0),
-                  ),
-                  SizedBox(
-                    height: 6.0,
-                  ),
-                  Text("DTH Bills",
-                      style:
-                          TextStyle(color: Color(0xff111111), fontSize: 13.0))
-                ],
-              ),
-              Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Color(0x25957CEB),
-                    radius: 28.0,
-                    child: Image.asset('assets/bulb.png', width: 28.0),
-                  ),
-                  SizedBox(
-                    height: 6.0,
-                  ),
-                  Text("Electricity",
-                      style:
-                          TextStyle(color: Color(0xff111111), fontSize: 13.0))
-                ],
-              ),
-              Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Color(0x20957CEB),
-                    radius: 28.0,
-                    child: Image.asset('assets/connection.png', width: 28.0),
-                  ),
-                  SizedBox(
-                    height: 6.0,
-                  ),
-                  Text("Broadband",
-                      style:
-                          TextStyle(color: Color(0xff111111), fontSize: 13.0))
-                ],
-              ),
+              buildFeature("user-interface", 28.0, "Prepaid Bills"),
+              buildFeature("dth", 28.0, "DTH Bills"),
+              buildFeature("bulb", 28.0, "Electricity"),
+              buildFeature("connection", 28.0, "Broadband"),
             ],
           ),
           SizedBox(
@@ -88,70 +32,31 @@ class _FeatureSectionState extends State<FeatureSection> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Color(0x20957CEB),
-                    radius: 28.0,
-                    child: Image.asset('assets/car-repair.png', width: 28.0),
-                  ),
-                  SizedBox(
-                    height: 6.0,
-                  ),
-                  Text("Car Insurance",
-                      style:
-                          TextStyle(color: Color(0xff111111), fontSize: 13.0))
-                ],
-              ),
-              Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Color(0x25957CEB),
-                    radius: 28.0,
-                    child: Image.asset('assets/credit-card.png', width: 28.0),
-                  ),
-                  SizedBox(
-                    height: 6.0,
-                  ),
-                  Text("Credit Card",
-                      style:
-                          TextStyle(color: Color(0xff111111), fontSize: 13.0))
-                ],
-              ),
-              Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Color(0x25957CEB),
-                    radius: 28.0,
-                    child: Image.asset('assets/picnic.png', width: 28.0),
-                  ),
-                  SizedBox(
-                    height: 6.0,
-                  ),
-                  Text("Big Basket",
-                      style:
-                          TextStyle(color: Color(0xff111111), fontSize: 13.0))
-                ],
-              ),
-              Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Color(0x20957CEB),
-                    radius: 28.0,
-                    child: Image.asset('assets/menu.png', width: 26.0),
-                  ),
-                  SizedBox(
-                    height: 6.0,
-                  ),
-                  Text("More",
-                      style:
-                          TextStyle(color: Color(0xff111111), fontSize: 13.0))
-                ],
-              ),
+              buildFeature("car-repair", 28.0, "Car Insurance"),
+              buildFeature("credit-card", 28.0, "Credit Card"),
+              buildFeature("picnic", 28.0, "Big Basket"),
+              buildFeature("menu", 22.0, "More"),
             ],
           ),
         ],
       ),
+    );
+  }
+
+  Column buildFeature(String icon, double iconWidth, String featureName) {
+    return Column(
+      children: [
+        CircleAvatar(
+          backgroundColor: Color(0x20957CEB),
+          radius: 28.0,
+          child: Image.asset('assets/$icon.png', width: iconWidth),
+        ),
+        SizedBox(
+          height: 6.0,
+        ),
+        Text(featureName,
+            style: TextStyle(color: Color(0xff111111), fontSize: 13.0))
+      ],
     );
   }
 }
