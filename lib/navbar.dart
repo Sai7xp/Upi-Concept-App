@@ -22,10 +22,7 @@ class _NavBarWidgetState extends State<NavBarWidget> {
       'Index 1: History',
       style: optionStyle,
     ),
-    Text(
-      'Index 2: Wallet',
-      style: optionStyle,
-    ),
+    HomePage(),
     Text(
       'Index 3: Offers',
       style: optionStyle,
